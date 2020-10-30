@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body onload="startTime()">
+    <div class="calculator">
+      <div class="top-container">
+        <div id="clock">
+        </div>
+        <div>
+          <i class="fa fa-wifi" aria-hidden="true"></i>
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <form name="forms">
+        <input type="text" id="display" name="display" disabled>
+        <div class="buttons">
+          <input type="button" class="upper" value="AC" onclick="clr()">
+          <input type="button" class="upper" value="del" onclick="del()">
+          <input type="button" class="upper" value="%" onclick="append(value)">
+          <input type="button" class="operator" value="/" onclick="append(value)">
+          <br>
+          <input type="button" value="7" onclick="append(value)">
+          <input type="button" value="8" onclick="append(value)">
+          <input type="button" value="9" onclick="append(value)">
+          <input type="button" class="operator" value="*" onclick="append(value)">
+          <br>
+          <input type="button" value="4" onclick="append(value)">
+          <input type="button" value="5" onclick="append(value)">
+          <input type="button" value="6" onclick="append(value)">
+          <input type="button" class="operator" value="-" onclick="append(value)">
+          <br>
+          <input type="button" value="1" onclick="append(value)">
+          <input type="button" value="2" onclick="append(value)">
+          <input type="button" value="3" onclick="append(value)">
+          <input type="button" class="operator" value="+" onclick="append(value)">
+          <br>
+          <input type="button" value="00" onclick="append(value)">
+          <input type="button" value="0" onclick="append(value)">
+          <input type="button" value="." onclick="append(value)">
+          <input type="button" class="operator" value="=" onclick="answer()">
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
